@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Logs & DB
+*.log
+db.sqlite3
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Flask
+instance/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# -----------------------------
+# Flutter
+# -----------------------------
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Android
+.gradle/
+local.properties
+*.keystore
+
+# iOS
+Pods/
+Runner.xcworkspace/
+
+# -----------------------------
+# Sensitive files
+# -----------------------------
+config.py
+google-services.json
+firebase-adminsdk.json
+windows/.env
+lib/screens/hangman_game.dart
+lib/screens/health_tips_screen.dart
+lib/screens/riddle_puzzle_game.dart
+lib/screens/rock_paper_scissors.dart
+lib/screens/tic_tac_toe_game.dart
+lib/screens/chatbot_screen.dart

@@ -1,0 +1,38 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Make sure this is present
+}
+
+android {
+    namespace = "com.example.elderhaven" // Replace with your application ID
+    compileSdk = 33 // Update to the latest SDK version
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.elderhaven" // Replace with your application ID
+        minSdkVersion = flutter.minSdkVersion // Minimum SDK version
+        targetSdk = 33 // Target SDK version
+        versionCode = 1
+        versionName = "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
